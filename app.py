@@ -14,7 +14,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 # Load the pre-trained model
-model = load_model('sarcasm_detection.h5')
+model = load_model('SarcasmDetection_model.h5')
 tokenizer_obj = Tokenizer()
 
 # Function to clean the text
