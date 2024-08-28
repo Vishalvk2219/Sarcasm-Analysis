@@ -1,5 +1,0 @@
-pip install numpy
-pip install tensorflow
-pip install keras
-pip install pandas
-pip install nltk
