@@ -98,6 +98,6 @@ st.sidebar.info(
 
 st.sidebar.markdown(
     """
-    Developed by: [Vishal Kumar]
+    Developed by: Vishal Kumar
     """
 )
