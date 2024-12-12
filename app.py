@@ -8,14 +8,17 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from keras.models import load_model
 import nltk
+import cloudpickle
 
 # Download required NLTK data
 nltk.download('stopwords')
 nltk.download('punkt')
 
 # Load the pre-trained model
-model = load_model('SarcasmDetection_model.h5')
-tokenizer_obj = Tokenizer()
+model = load_model('Sarcasmmodel.h5')
+
+with open('tokenizer.pkl', 'rb') as file:
+    tokenizer_obj = cloudpickle.load(file)
 
 # Function to clean the text
 def clean_text(text):
