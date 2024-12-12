@@ -40,7 +40,7 @@ def CleanTokenize(df):
     return head_lines
 
 # Function to predict sarcasm
-def predict_sarcasm(text, max_length=100):
+def predict_sarcasm(text, max_length=25):
     x_final = pd.DataFrame({"headline": [text]})
     test_lines = CleanTokenize(x_final)
     test_sequences = tokenizer_obj.texts_to_sequences(test_lines)
